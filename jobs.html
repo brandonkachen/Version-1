@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>uBeam Redesign</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/jobpage.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<script language="javascript">
+
+function showOrHide_ME() 
+{
+    var div = document.getElementById("showOrHideDiv_ME");
+    var div2 = document.getElementById("showOrHideDiv_APE");
+    var div3 = document.getElementById("showOrHideDiv_EE");
+    
+    if (div.style.display == "block") // if mech is on,
+    {
+        div.style.display = "none";
+    }
+    else if (div.style.display == "none") // if mech is not on,
+    {
+        div2.style.display = "none";
+        div3.style.display = "none";
+        div.style.display = "block";
+    }
+}
+
+function showOrHide_APE() 
+{
+    var div = document.getElementById("showOrHideDiv_ME");
+    var div2 = document.getElementById("showOrHideDiv_APE");
+    var div3 = document.getElementById("showOrHideDiv_EE");
+
+    if (div2.style.display == "block") // if acoustics is on,
+    {
+        div2.style.display = "none";
+    }
+    else if (div2.style.display == "none") // if acoustics is not on,
+    {
+        div.style.display = "none";
+        div3.style.display = "none";
+        div2.style.display = "block";
+    }
+}
+
+function showOrHide_EE() 
+{
+    var div = document.getElementById("showOrHideDiv_ME");
+    var div2 = document.getElementById("showOrHideDiv_APE");
+    var div3 = document.getElementById("showOrHideDiv_EE");
+
+    if (div3.style.display == "block") // if ee is on,
+    {
+        div3.style.display = "none";
+    }
+    else if (div3.style.display == "none") // if ee is not on,
+    {
+        div.style.display = "none";
+        div2.style.display = "none";
+        div3.style.display = "block";
+    }
+}    
+    
+</script>
+    
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/">
+                    <span class="light"></span>uBeam
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li><a class="page-scroll" href="#about">What We're Looking For</a></li>
+                    <li><a class="page-scroll" href="#download">Open Positions</a></li>
+                </ul>
+             </div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="pull-right">
+                    <li><a href="aboutus.html">WHO WE ARE</a></li>
+                    <li><a href="#page-top">JOBS</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Join the team.</h1>
+                            <p1><a href="#about" class="btn btn-circle page-scroll">
+                                <i class="fa fa-angle-double-down animated"></i></a>
+                            </p1>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+            <div class="about-section">
+                <h1 >We’re on a mission to untether the world. <br> <br> And we’re in search of new blood to join the team.</h1>
+                <div class="container">
+                    <p>Our engineering team is comprised of world-class multidisciplinary inventors, where the word “impossible” is not part of our lexicon.<br> We take pride in solving complex technological problems quickly, across many fields. <br> At uBeam, we go from PowerPoint to prototype in a month or less. <br> <br> We’re seeking hands on, dedicated people who are driven to push the boundaries of technology,<br> people who are not looking for a typical 9-to-5 desk job. <br> <br> We want the people who are looking to make tectonic shifts in the world of electricity. </p>
+                </div>
+                <a href="#download" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class = "container">
+              <div class = "col-md-4">
+                   <a href="javascript:showOrHide_ME();"><button type="ME" style="height:100px; width:300px">
+                        Mechanical Engineer
+                   </button></a>
+              </div>
+
+              <div class = "col-md-4">
+                    <a href="javascript:showOrHide_APE();"><button type="APE" style="height:100px; width:300px">
+                        Acoustics / Piezoelectic Engineer
+                    </button></a>
+              </div>
+
+              <div class = "col-md-4">
+                    <a href="javascript:showOrHide_EE();"><button type="EE" style="height:100px; width:300px">
+                        Electrical Engineer
+                    </button></a>
+              </div>
+
+                <div id="showOrHideDiv_ME" style="display: none">
+                    <p2><br><br><br><br>Seeking candidates with Mechanical Engineering (electromechanical focused) / Electrical Engineering (electromechanical focused) background to work on high power airborne ultrasonic phased array transmission systems including design and modeling of electromechanical systems, structural/packaging mechanics (consumer electronics cases), design and production optimization of mechanical and electrical designs, and design for manufacturing.  Candidates with key differentiators in mechanical with limited electrical experience (or visa versa) are acceptable if specific experience is near-ideal. <br> <br> Applicant must have experience in the following core responsibilities:<br><br>
+                    <ul>
+                        <li>Mechanical design</li>
+                            <ul>
+                                <li>Structural, mechanism, and thermal design – strong theoretical basis, knowledge of vibration/effects</li>
+                            </ul>
+                        <li>Electronics/Control Theory/embedded systems</li>
+                            <ul>
+                                <li>Experience with feedback systems, robotics</li>    
+                                <li>Control theory, robotics, microcontrollers, electromechanical systems and drivers</li>
+                            </ul>
+                        <li>CAD/CAM/CAE</li>
+                            <ul>
+                                <li>Proficiency Solidworks/catia/ProE</li>
+                                <li>Knowledge of drawing and dimensioning standards</li>
+                            </ul>
+                        <li>Rapid Prototyping experience</li>
+                             <ul>
+                                  <li>Use of 3D printers, waterjets, laser cutters</li>
+                                  <li>Experience with PCB fabrication (mill/stencil/pick-place) equipment and methods a key differentiator</li>
+                            </ul>
+                        <li>Machining Experience</li>
+                             <ul>
+                                  <li>Comfort in machine shop, knowledge of techniques for working with a wide variety of materials, working knowledge of mill/lathe, toolpath design, CNC lathe/mill, waterjet</li>
+                            </ul>
+                        </li>Design for manufacture, design for assembly</li>
+                             <ul>
+                                  <li>Injection molding experience for consumer product</li>
+                                  <li>Optimization for materials/cost</li>
+                            </ul>
+                    </ul><br><br><br><br>
+                    </p2>
+                </div>
+                
+                <div id="showOrHideDiv_APE" style="display: none">
+                   <p2><br><br><br><br>Seeking candidates with physics/EE background focused on acoustics, specifically, design, test, simulation and construction of piezoelectric transducer systems to work on high power airborne ultrasonic phased array transmission systems. Candidate will work with EEs and Acoustic Transducer engineers to design, model, and test optimal systems. <br> <br> Applicant must have experience in the following core responsibilities:<br><br>
+                        <ul>
+                        <li>Piezoelectric Transducer Design</li>
+                            <ul>
+                                <li>Fundamentals of piezo device design, piezocomposites, multiple matching layers</li>
+                                 <li>Phased arrays, 2D phased array experience a plus</li>
+                                <li>Beamforming methods, implementation and optimization</li>
+                                <li>Experience of integration of design into mass produced product</li>
+                                <li>Multi-industry experience desirable</li>
+                            </ul>
+                        <li>Transducer/Acoustic Numerical Simulation</li>
+                            <ul>
+                                <li>Fundamentals of calculations for standard device metrics and beam calculation</li>    
+                            </ul>
+                        <li>Experience in FE codes such as ATILA, Simulia, COMSOL, PZFlex and other specialist codes such as Field II and general codes such as MATLAB and Octave, CAD such as SolidWorks or Pro-E.</li>
+                        <li>Piezo Device Manufacture</li>
+                             <ul>
+                                    <li>Hands on experience in construction of piezo devices</li>
+                                  <li>Bonding, alignment, wiring</li>
+                                  <li>Familiar with basic clean rooms, cleaners, ovens, wire/blade saws.</li>
+                            </ul>
+                        <li>Test Experience</li>
+                             <ul>
+                                  <li>Experience in standard ultrasound testing equipment</li>
+                                    <ul>
+                                        <li>Impedance analyzers, vibrometers, hydrophones etc.</li>
+                                        <li>Analysis and presentation of large quantities of test data, and validation of simulation results.</li>
+                                    </ul>
+                            </ul>
+                        </li>Materials knowledge of fundamentals of piezoelectric materials, polymers</li>
+                    </li>Programming</li>
+                             <ul>
+                                  <li>Knowledge of basic scripting languages such as Python, LabView</li>
+                                  <li>Experience in numerical coding of physical phenomena a plus</li>
+                            </ul>
+                    </ul>
+    <br><br><br><br>
+                    </p2>
+                </div>
+                
+                <div id="showOrHideDiv_EE" style="display: none">
+                    <p2><br><br><br><br>Seeking Electrical Engineers to work on uBeam transmitter and receiver systems.  Senior level candidates should have experience / qualifications matching the majority of requirements, junior level candidates with more limited experience are desired as well, and will be additionally trained on-the-job.<br> <br> EE candidates will be responsible for the design, integration, and qualification of the electronics systems.  The ideal candidate has designed high volume, high power, high-quality consumer electronics products with a consistent focus on product design as well as attention to detail.  The candidate will work closely with in-house and contract engineering teams (EE, Acoustic) to develop complete solutions.  They will work with the rest of the team to design, develop, and bring the products from concept to production. <br> <br> Applicant are desired with experience in the following areas:<br><br>
+                         <ul>
+                        <li>Electrical Engineering design/engineering/build/test</li>
+                            <ul>
+                                <li>Acoustic transducer driver (or low frequency power amplifier) & interface electronics</li>
+                                <li>Electronics simulation (eg SPICE), design optimization, and model iteration using experimental data</li>
+                                <li>Mixed signal (analog & digital) ASIC design</li>
+                                <li>Battery charging and power management electronics</li>
+                                <li>Microcontroller programming and architecture </li>
+                            </ul>
+                        <li>PCB design, engineering, build, and test experience</li>
+                            <ul>
+                                <li>Key differentiator is specific experience in all common methods of PCB fabrication and assembly (etch/mill/stencil/pick-place/etc)</li>
+                                <li>Design AND build experience with high density PCBs</li>
+                                <li>Chip-on-board & flex circuit design experience</li>
+                            </ul>
+                        <li>Consumer electronics design experience</li>
+                        <li>Electronics production and manufacturing experience</li>
+                            <ul>
+                                <li>Experience in selecting EE components, writing detailed electrical specification of the system interface, and test plan documents</li>    
+                                <li>Communication of design requirements to fabrication houses</li>
+                                <li>Define Design for Manufacturing (DFM) guidelines</li>
+                                <li>Prototype build, test, and debugging</li>
+                                <li>Working with vendors/suppliers/manufacturing partners</li>
+                                <li>Experience in analyzing trade-offs between performance, manufacturability and cost</li>
+                                
+                            </ul>
+                        <li>CAD/CAM/CAE</li>
+                            <ul>
+                                <li>Proficiency Solidworks/catia/ProE</li>
+                                <li>Knowledge of drawing and dimensioning standards</li>
+                            </ul>
+                        <li>Rapid Prototyping experience</li>
+                             <ul>
+                                  <li>Use of 3D printers, waterjets, laser cutters</li>
+                                  <li>Experience with PCB fabrication (mill/stencil/pick-place) equipment and methods a key differentiator</li>
+                            </ul>
+                        <li>Machining Experience</li>
+                             <ul>
+                                  <li>Comfort in machine shop, knowledge of techniques for working with a wide variety of materials, working knowledge of mill/lathe, toolpath design, CNC lathe/mill, waterjet</li>
+                            </ul>
+                        </li>Design for manufacture, design for assembly</li>
+                             <ul>
+                                  <li>Injection molding experience for consumer product</li>
+                                  <li>Optimization for materials/cost</li>
+                            </ul>
+                    </ul><br><br><br><br>
+    
+                    </p2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="e-mail">
+            <h1>Stay in the loop.</h1>
+                <input type= "email" placeholder = "Email">
+                <input type= "submit">
+
+            <ul class="list-inline banner-social-buttons">
+                <li>
+                    <a href="https://twitter.com/ubeam" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/uBeamInc" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/ubeam" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name"></span></a>
+                </li>
+            </ul>   
+        </div>
+
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
